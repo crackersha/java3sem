@@ -1,0 +1,78 @@
+package prak10.task1;
+
+/*Создать свой класс Student со всеми переменными экземпляра, конструктором, включающим все переменные,
+предпочтительно использовать геттеры и сеттеры для каждой переменной.
+Класс студент имеет свойства: Имя, Фамилия, Специальность, Курс, Группа*/
+
+public class Student {
+    private String FirstName;
+    private String SecondName;
+    private String Specialization;
+    private short Group;
+    private byte Course;
+    private double GPA;
+
+    public Student(){}
+
+    public Student(Student A) {
+        this.FirstName = A.FirstName;
+        this.SecondName = A.SecondName;
+        this.Specialization = A.Specialization;
+        this.Group = A.Group;
+        this.Course = A.Course;
+        this.GPA = A.GPA;
+    }
+
+    public String getFirstName() {
+        return FirstName;
+    }
+
+    public void setFirstName(String firstName) {
+        FirstName = firstName;
+    }
+
+    public String getSecondName() {
+        return SecondName;
+    }
+
+    public void setSecondName(String secondName) {
+        SecondName = secondName;
+    }
+
+    public String getSpecialization() {
+        return Specialization;
+    }
+
+    public void setSpecialization(String specialization) {
+        Specialization = specialization;
+    }
+
+    public short getGroup() {
+        return Group;
+    }
+
+    public void setGroup(short group) {
+        Group = group;
+    }
+
+    public byte getCourse() {
+        return Course;
+    }
+
+    public void setCourse(byte course) {
+        Course = course;
+    }
+
+    public double getGPA() {
+        return GPA;
+    }
+
+    public void setGPA(double gpa) {
+        GPA = gpa;
+    }
+
+    public String toString() {
+        return "Student: " + this.FirstName + " " + this.SecondName + "\nSpecialization: " +
+                this.Specialization + "\nGroup: " + this.Group + "\nCourse: " + this.Course + "\nGPA: " + this.GPA + "\n";
+    }
+}
